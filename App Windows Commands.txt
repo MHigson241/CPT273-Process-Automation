@@ -1,0 +1,14 @@
+#Get
+http://127.0.0.1:5000/get
+
+#Get by ID
+curl -X POST -H "Content-Type: application/json" -d "{\"id\": <id>}" http://127.0.0.1:5000/get
+
+#Add
+curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"<name>\"}" http://127.0.0.1:5000/add
+
+#Edit
+curl -X POST -H "Content-Type: application/json" -d "{\"id\": <id>, \"name\": \"<name>\"}" http://127.0.0.1:5000/edit
+
+#Delete
+curl -X POST -H "Content-Type: application/json" -d "{\"id\": <id>}" http://127.0.0.1:5000/delete
